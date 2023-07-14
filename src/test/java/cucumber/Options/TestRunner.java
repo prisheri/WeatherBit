@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/featureFiles/placeValidations.feature",
+@CucumberOptions(features = "src/test/resources/featureFiles/CurrentWeatherData.feature",
         glue = {"stepDefinitions"})
 
 public class TestRunner {
