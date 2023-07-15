@@ -1,5 +1,8 @@
+@CurrentWeatherData
 Feature: Regression suite get Current Weather Data for multiple places in the world
 
+  #This scenario is for getting current weather data using latitude and longitude as inputs
+  @CurrentWeather_Lat_Lon
   Scenario Outline: Get Current Weather Data for multiple places in the world based on Lat and Lon
     Given user wants current weather data for the place with latitude <lat> and longitude <lon>
     When user calls  current weather data API with get http request
@@ -11,6 +14,8 @@ Feature: Regression suite get Current Weather Data for multiple places in the wo
       | 30.608  | -84.242 |
       | 43.04   | -71.478 |
 
+    #This scenario is for getting current weather data using postal code as input
+  @CurrentWeather_PostalCode
   Scenario Outline: Get Current Weather Data for multiple places in the world based on PostCode
     Given user wants current weather data for the place for postal code "<PostCode>"
     When user calls  current weather data API with get http request
