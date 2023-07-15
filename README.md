@@ -17,7 +17,7 @@ Main features:
 7. Each scenario is tagged to run sepecific scenario or even complete feature file
 
 Demo:
-1. Software Requirement to run this project:
+1. Software Requirement to run this project: 
    a. JRE
    b. Maven
 2. Download this project and in command line execute:
