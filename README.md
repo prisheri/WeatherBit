@@ -29,4 +29,5 @@ Demo:
    b. "mvn test verify -Dcucumber.filter.tags="@CurrentWeather_Lat_Lon" - to run scenario to get weather data with latitude and longitude as inputs
    
    c. "mvn test verify -Dcucumber.filter.tags="@CurrentWeather_PostalCode" - to run scenario to get weather data with post code as input
+3. HTML reports are generated at target/cucumber-html-reports/overview-features.html. Use  
    
