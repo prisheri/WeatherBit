@@ -17,11 +17,16 @@ Main features:
 7. Each scenario is tagged to run sepecific scenario or even complete feature file
 
 Demo:
-1. Software Requirement to run this project: 
+1. Software Requirement to run this project:
+    
    a. JRE
+   
    b. Maven
 2. Download this project and in command line execute:
+   
    a. "mvn test verify -Dcucumber.filter.tags="@CurrentWeatherData"  - to run entire feature file containing all the scenarios to get current weather data
+   
    b. "mvn test verify -Dcucumber.filter.tags="@CurrentWeather_Lat_Lon" - to run scenario to get weather data with latitude and longitude as inputs
+   
    c. "mvn test verify -Dcucumber.filter.tags="@CurrentWeather_PostalCode" - to run scenario to get weather data with post code as input
    
