@@ -31,6 +31,6 @@ Demo:
    
    c. "mvn test verify -Dcucumber.filter.tags="@CurrentWeather_PostalCode" - to run scenario to get weather data with post code as input
 
-   NOTE: Above command work with MAVEN version 3.8 or higher
-4. HTML reports are generated at target/cucumber-html-reports/overview-features.html
+   NOTE: Above command work with MAVEN version 3.8 or higher. For lower version use -Dcucumber.options="--tags @CurrentWeatherData"
+3. HTML reports are generated at target/cucumber-html-reports/overview-features.html
    
