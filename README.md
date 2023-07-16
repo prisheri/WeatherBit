@@ -15,13 +15,14 @@ Main features:
 5. All classes and methods are implemented in Java with Maven repository to include all dependencies needed.
 6. Used https://github.com/damianszczepanik/maven-cucumber-reporting lpugin to generate HTML reports. The HTML reports are very descriptive with good statistics.
 7. Each scenario is tagged to run sepecific scenario or even complete feature file
+8. Implemented POJO classes for deserializing response json to increase readability and reusability of code.
 
 Demo:
 1. Software Requirement to run this project:
     
-   a. JRE
+   a. JDK - version used 11
    
-   b. Maven
+   b. Maven -version used 3.8.3
 2. Download this project and in command line execute:
    
    a. "mvn test verify -Dcucumber.filter.tags="@CurrentWeatherData"  - to run entire feature file containing all the scenarios to get current weather data
@@ -29,5 +30,7 @@ Demo:
    b. "mvn test verify -Dcucumber.filter.tags="@CurrentWeather_Lat_Lon" - to run scenario to get weather data with latitude and longitude as inputs
    
    c. "mvn test verify -Dcucumber.filter.tags="@CurrentWeather_PostalCode" - to run scenario to get weather data with post code as input
-3. HTML reports are generated at target/cucumber-html-reports/overview-features.html
+
+   NOTE: Above command work with MAVEN version 3.8 or higher
+4. HTML reports are generated at target/cucumber-html-reports/overview-features.html
    
