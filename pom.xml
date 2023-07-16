@@ -39,7 +39,7 @@
               <goal>generate</goal>
             </goals>
             <configuration>
-              <projectName>cucumber-jvm-example</projectName>
+              <projectName>WeatherBit</projectName>
               <!-- optional, per documentation set this to "true" to bypass generation of Cucumber Reports entirely, defaults to false if not specified -->
               <skip>false</skip>
               <!-- output directory for the generated report -->
@@ -51,7 +51,7 @@
                 <param>**/*.json</param>
               </jsonFiles>
 
-              
+
               <!-- optional, set true to group features by its Ids -->
               <mergeFeaturesById>false</mergeFeaturesById>
               <!-- optional, set true to get a final report with latest results of the same test from different test runs -->
@@ -66,14 +66,17 @@
   </build>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
 
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+  <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+  <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.9.3</version>
+    <scope>test</scope>
+  </dependency>
+
+
+  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-java</artifactId>
@@ -94,6 +97,12 @@
       <artifactId>rest-assured</artifactId>
       <version>5.3.1</version>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.10.1</version>
     </dependency>
 
   </dependencies>
